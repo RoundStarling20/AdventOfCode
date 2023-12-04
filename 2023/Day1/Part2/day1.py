@@ -14,7 +14,7 @@ def num2int(string:str) ->str:
     for i in range(len(string)):
         if string[i].isdigit():
             calibration = calibration + string[i]
-            j = i
+            j = i + 1
         else:
             substring = string[j:i+1]
             for key in numbers.keys():
